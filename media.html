@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    iframe, video{display: block; margin: auto;}
+    .displayInline{display: inline-block;}
+</style>
+<body style="text-align:centre;">
+    <h2>HOW TO ADD MAIN MEDIA IN HTML: <br> HTML VIDEO, HTML AUDIO AND YOUTUBE VIDEOS</h2>
+    <h3>Youtube Videos</h3>
+    <div class="displayInline">
+        <iframe width="200" height="200" src="https://www.youtube.com/embed/tgB1wUcmbbw"></iframe>
+        <span>Autoplay & Mute</span>
+    </div>
+    <h3>Html Video</h3>
+    <div>
+        <video id="Fire" width="300" height="170" autoplay muted>
+            <source src="Fire.mp4" type="video/mp4">
+        </video>
+        <button style="margin-top:0.5rem;" onclick="playstop()"></button>
+    </div>
+    <script>
+        var firevideo = document.getElementById("Fire");
+        function playstop(){if (firevideo.paused) firevideo.play(); else fireVideo.pause();}
+   </script>
+   <h3>Html Video</h3>
+   <audio controls>
+        <source src="Nature.mp3" type="audio.mpeg">
+   </audio>
+</body>
+</html>
